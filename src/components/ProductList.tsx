@@ -1,7 +1,5 @@
-// src/components/ProductsList.tsx
-
 import React from "react"
-import { Col, Row } from "react-bootstrap"
+import { Col, Row } from "reactstrap"
 import { ProductType } from "./services/products"
 import ProductCard from "./ProductCard"
 

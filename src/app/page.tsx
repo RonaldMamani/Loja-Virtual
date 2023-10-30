@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+
 import Link from 'next/link'
 import Header from '@/components/Header'
-import {Button, Container} from 'react-bootstrap'
-
+import { Button, Container } from "reactstrap"
 
 export default function Home() {
   return (

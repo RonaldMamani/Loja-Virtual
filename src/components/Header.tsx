@@ -1,30 +1,18 @@
-import Link from "next/link"
-import { Navbar, Nav, Container } from "react-bootstrap"
+"use client"
 
-
+import Link from 'next/link'
+import {Navbar, Nav} from 'reactstrap'
 
 const Header = () => {
     return (
-        <>
-            <Navbar expand="md" bg="dark" className="navbar">
-                <Container color="dark">
-                    <Link href='/' className="navbar-brand text-light">
-                        Inicio
-                    </Link>
-                    <Nav className="flex-row" navbar>
-                        <Link href='/products' className="nav-link me-2 text-light">
-                            Produtos
-                        </Link>
-                        <Link href='/cart' className="nav-link text-light">
-                            Carrinho
-                        </Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-        </>
-    
+        <Navbar container="md" color='dark' dark>
+            <Link className='navbar-brand' href="/">Inicio</Link>
+            <Nav className='flex-row gap-3' navbar>
+                <Link className='nav-link me-2' href="/products">Produtos</Link>
+                <Link className='nav-link' href="/cart">Carrinho</Link>
+            </Nav>
+        </Navbar>
     )
 }
-
 
 export default Header

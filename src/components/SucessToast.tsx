@@ -1,6 +1,4 @@
-// src/components/SuccessToast.tsx
-
-import { Button, Toast, ToastBody } from "react-bootstrap"
+import { Button, Toast, ToastBody } from "reactstrap"
 
 const SuccessToast = (props: {
     toastIsOpen: boolean
@@ -9,13 +7,15 @@ const SuccessToast = (props: {
     return (
         <Toast
             className="bg-success text-white fixed-bottom ms-auto me-4 mb-4"
-            show={props.toastIsOpen}
+            isOpen={props.toastIsOpen}
+            fade
             >
             <ToastBody className="d-flex justify-content-between">
                 Produto adicionado ao carrinho.
                 <Button
-                    className="btn-close-white"
-                    onClick={() => props.setToastIsOpen(false)}
+                close
+                className="btn-close-white"
+                onClick={() => props.setToastIsOpen(false)}
                 ></Button>
             </ToastBody>
         </Toast>
