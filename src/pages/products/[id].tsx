@@ -5,7 +5,7 @@ import Head from "next/head";
 import { ReactNode } from "react";
 import { Container } from "reactstrap";
 
-import { fetchProduct, fetchProducts, ProductType } from "@/components/services/products";
+import { fetchProduct, fetchProducts, ProductType } from "@/services/products";
 import Header from "@/components/Header";
 import ProductDetails from "@/components/ProductDetails";
 

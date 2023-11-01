@@ -4,7 +4,7 @@ import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import { ReactNode } from 'react'
 import { Container } from 'reactstrap'
-import { fetchProducts, ProductType } from '@/components/services/products'
+import { fetchProducts, ProductType } from '@/services/products'
 import ProductsList from '@/components/ProductList'
 import Header from '@/components/Header'
 

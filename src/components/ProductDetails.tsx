@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Button, Col, Row } from "reactstrap";
-import { ProductType } from "./services/products";
+import { ProductType } from "../services/products";
 import SuccessToast from "./SucessToast";
 
 type ProductDetailsProps = {
