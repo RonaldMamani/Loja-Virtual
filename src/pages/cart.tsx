@@ -1,6 +1,7 @@
 "use client"
 
 import CartTable from "@/components/CartTable";
+import CartTotal from "@/components/CartTotal";
 import Header from "@/components/Header";
 import { NextPage } from "next";
 import Head from "next/head";
@@ -23,6 +24,7 @@ const Cart: NextPage = () => {
                 </h1>
 
                 <CartTable />
+                <CartTotal />
             </Container>
         </main>
         </>
