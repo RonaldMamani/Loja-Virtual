@@ -1,6 +1,10 @@
+"use client"
+
+import CartTable from "@/components/CartTable";
 import Header from "@/components/Header";
 import { NextPage } from "next";
 import Head from "next/head";
+import { Container } from "reactstrap";
 
 const Cart: NextPage = () => {
     return (
@@ -12,9 +16,15 @@ const Cart: NextPage = () => {
         </Head>
 
         <Header />
-        <h1>
-            Carrinho
-        </h1>
+        <main>
+            <Container className="mb-5">
+                <h1 className="my-5">
+                Carrinho
+                </h1>
+
+                <CartTable />
+            </Container>
+        </main>
         </>
     )
 }

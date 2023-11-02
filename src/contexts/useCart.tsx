@@ -1,5 +1,3 @@
-// src/hooks/useCart.tsx
-
 import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { ProductType } from "../services/products";
 
@@ -42,10 +40,10 @@ export const CartContextProvider = (props: {
         }
     
         return (
-        <CartContext.Provider
-            value={{ cart, addProduct, removeProduct }}
-        >
-            {props.children}
-        </CartContext.Provider>
+            <CartContext.Provider
+                value={{ cart, addProduct, removeProduct }}
+            >
+                {props.children}
+            </CartContext.Provider>
         );
     }
